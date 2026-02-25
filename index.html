@@ -157,22 +157,23 @@
     <section id="goals" class="section wrap">
   <div class="section-head">
     <h2>Goals & Progress Tracker</h2>
+    <p class="muted">Public progress (view-only). Updated by commits.</p>
   </div>
 
   <div class="grid two">
     <div class="card">
       <div class="card-row">
-  <h3>Cert Roadmap</h3>
-</div>
+        <h3>Cert Roadmap</h3>
+      </div>
 
       <div class="checklist" data-group="certs">
-        <label><input type="checkbox" checked disabled data-key="secplus_reading" /> Security+ SY0-701 — finish study objectives</label>
-        <label><input type="checkbox" disabled data-key="secplus_reading" /> Security+ — complete practice exams + weak areas</label>
-        <label><input type="checkbox" disabled data-key="secplus_reading" /> Security+ — schedule & pass exam</label>
+        <label><input type="checkbox" checked disabled data-key="secplus_objectives" /> Security+ SY0-701 — finish study objectives</label>
+        <label><input type="checkbox" disabled data-key="secplus_practice" /> Security+ — complete practice exams + weak areas</label>
+        <label><input type="checkbox" disabled data-key="secplus_exam" /> Security+ — schedule & pass exam</label>
         <hr />
-        <label><input type="checkbox" disabled data-key="secplus_reading" /> Next: CySA+ — create study plan</label>
-        <label><input type="checkbox" disabled data-key="secplus_reading" /> Next: BTL1 — hands-on SOC labs</label>
-        <label><input type="checkbox" disabled data-key="secplus_reading" /> Next: PNPT — structured red team track</label>
+        <label><input type="checkbox" disabled data-key="cysa_plan" /> Next: CySA+ — create study plan</label>
+        <label><input type="checkbox" disabled data-key="btl1_plan" /> Next: BTL1 — hands-on SOC labs</label>
+        <label><input type="checkbox" disabled data-key="pnpt_plan" /> Next: PNPT — structured red team track</label>
       </div>
 
       <div class="progress">
@@ -207,88 +208,89 @@
       </div>
     </div>
   </div>
-    <section id="projects" class="section wrap">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">Add screenshots and Video soon .</p>
+</section>
+
+<section id="projects" class="section wrap">
+  <div class="section-head">
+    <h2>Projects</h2>
+    <p class="muted">Add screenshots and video soon.</p>
+  </div>
+
+  <div class="grid three">
+    <article class="card">
+      <h3>Cyber Portfolio + Tracker</h3>
+      <p class="muted small">This website (GitHub Pages) + goals checklist + proof log.</p>
+      <div class="card-actions">
+        <a class="btn tiny primary" href="https://souley393.github.io/Cyber-Portfolio/">Live</a>
+        <a class="btn tiny ghost" href="https://github.com/souley393/Cyber-Portfolio">Repo</a>
       </div>
+    </article>
 
-      <div class="grid three">
-        <article class="card">
-          <h3>Cyber Portfolio + Tracker</h3>
-          <p class="muted small">This website (GitHub Pages) + goals checklist + proof log.</p>
-          <div class="card-actions">
-            <a class="btn tiny primary" href="https://souley393.github.io/Cyber-Portfolio/">Live</a>
-            <a class="btn tiny ghost" href="https://github.com/souley393/Cyber-Portfolio">Repo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Active Directory Lab Write-ups</h3>
-          <p class="muted small">Step-by-step: DC, DNS, join client, auditing, GPOs.</p>
-          <div class="card-actions">
-            <a class="btn tiny ghost" href="#" aria-disabled="true">Docs</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Attack + Detection Practice</h3>
-          <p class="muted small">Kerberoasting & PTH labs with “What to look for” logs.</p>
-          <div class="card-actions">
-            <a class="btn tiny ghost" href="#" aria-disabled="true">Write-up</a>
-          </div>
-        </article>
-
-   <article class="card glow">
-  <h3>TryHackMe – Blue Team Path</h3>
-  <img src="https://tryhackme-badges.s3.amazonaws.com/bamba393.png"
-       alt="TryHackMe Badge"
-       style="max-width:100%; border-radius:12px; margin-bottom:12px;">
-  <p class="muted small">
-    Focused on Blue Team, Active Directory, and detection-based labs.
-    Practicing log analysis, enumeration detection, and attack simulation in structured learning environments.
-  </p>
-
-  <ul class="bullet">
-    <li>Completed Blue Team fundamentals rooms</li>
-    <li>Practiced log-based detection scenarios</li>
-    <li>Active Directory attack simulations</li>
-  </ul>
-
-  <a class="btn tiny ghost" href="https://tryhackme.com/p/bamba393" target="_blank">View Profile</a>
-</article>
-</div>
+    <article class="card">
+      <h3>Active Directory Lab Write-ups</h3>
+      <p class="muted small">Step-by-step: DC, DNS, join client, auditing, GPOs.</p>
+      <div class="card-actions">
+        <a class="btn tiny ghost" href="#" aria-disabled="true">Docs</a>
       </div>
+    </article>
 
-    
-    </section>
-
-    <section id="contact" class="section wrap">
-      <div class="section-head">
-        <h2>Contact</h2>
-
-      <div class="grid two">
-        <div class="card">
-          <h3>Links</h3>
-          <ul class="bullet">
-            <li>LinkedIn: <span class="muted">Soon</span></li>
-            <li>GitHub: <span class="muted">github.com/souley393</span></li>
-            <li>Email: <span class="muted">bamba393@gmail.com</span></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Quick bio </h3>
-          <p class="muted small" id="copyBio">
-            Cybersecurity-focused IT professional with a hands-on VMware home lab (Windows Server 2022 AD, Windows client, Kali).
-            Documenting labs, certifications, and security learning in public with practical write-ups and projects.
-          </p>
-          <button id="copyBtn" class="btn tiny primary" type="button">Copy bio</button>
-          <p id="copyMsg" class="muted small" role="status" aria-live="polite"></p>
-          
-        </div>
+    <article class="card">
+      <h3>Attack + Detection Practice</h3>
+      <p class="muted small">Kerberoasting & PTH labs with “What to look for” logs.</p>
+      <div class="card-actions">
+        <a class="btn tiny ghost" href="#" aria-disabled="true">Write-up</a>
       </div>
-    </section>
+    </article>
+
+    <article class="card glow">
+      <h3>TryHackMe – Blue Team Path</h3>
+      <img src="https://tryhackme-badges.s3.amazonaws.com/bamba393.png"
+           alt="TryHackMe Badge"
+           style="max-width:100%; border-radius:12px; margin-bottom:12px;">
+
+      <p class="muted small">
+        Focused on Blue Team, Active Directory, and detection-based labs.
+        Practicing log analysis, enumeration detection, and attack simulation in structured learning environments.
+      </p>
+
+      <ul class="bullet">
+        <li>Completed Blue Team fundamentals rooms</li>
+        <li>Practiced log-based detection scenarios</li>
+        <li>Active Directory attack simulations</li>
+      </ul>
+
+      <a class="btn tiny ghost" href="https://tryhackme.com/p/bamba393" target="_blank">View Profile</a>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="section wrap">
+  <div class="section-head">
+    <h2>Contact</h2>
+    <p class="muted">Quick links for recruiters.</p>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>Links</h3>
+      <ul class="bullet">
+        <li>LinkedIn: <span class="muted">Soon</span></li>
+        <li>GitHub: <span class="muted">github.com/souley393</span></li>
+        <li>Email: <span class="muted">bamba393@gmail.com</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Quick bio</h3>
+      <p class="muted small" id="copyBio">
+        Cybersecurity-focused IT professional with a hands-on VMware home lab (Windows Server 2022 AD, Windows client, Kali).
+        Documenting labs, certifications, and security learning in public with practical write-ups and projects.
+      </p>
+      <button id="copyBtn" class="btn tiny primary" type="button">Copy bio</button>
+      <p id="copyMsg" class="muted small" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer class="footer wrap">
@@ -299,6 +301,7 @@
 </body>
 
 </html>
+
 
 
 
