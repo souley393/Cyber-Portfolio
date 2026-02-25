@@ -188,4 +188,9 @@ h1{font-size:3rem;line-height:1.05;margin:.35rem 0 .8rem 0}
   .nav{display:none}
   .menu-btn{display:inline-flex}
   .grid.two{grid-template-columns: 1fr}
+
+}
+/* Force hidden  */
+.mobile-nav[hidden] { 
+  display: none !important; 
 }
