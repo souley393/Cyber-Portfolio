@@ -1,7 +1,7 @@
 ## Goals & Progress
 
 ### Certifications
-- [ ] Security+ SY0-701 — finish objectives
+- [x] Security+ SY0-701 — finish objectives
 - [ ] Security+ — practice tests + weak areas
 - [ ] Security+ — schedule & pass exam
 - [ ] Next: CySA+ — plan
