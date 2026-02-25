@@ -155,66 +155,68 @@
     </section>
 
     <section id="goals" class="section wrap">
-      <div class="section-head">
-        <h2>Goals & Progress Tracker</h2>
-      
+  <div class="section-head">
+    <h2>Goals & Progress Tracker</h2>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <div class="card-row">
+        <h3>Cert Roadmap</h3>
+        <button id="resetBtn" class="btn tiny ghost" type="button">Reset checks</button>
       </div>
 
-      <div class="grid two">
-        <div class="card">
-          <div class="card-row">
-            <h3>Cert Roadmap</h3>
-            <button id="resetBtn" class="btn tiny ghost" type="button">Reset checks</button>
-          </div>
+      <div class="checklist" data-group="certs">
+        <label><input type="checkbox" data-key="secplus_reading" /> Security+ SY0-701 — finish study objectives</label>
+        <label><input type="checkbox" data-key="secplus_practice" /> Security+ — complete practice exams + weak areas</label>
+        <label><input type="checkbox" data-key="secplus_exam" /> Security+ — schedule & pass exam</label>
+        <hr />
+        <label><input type="checkbox" data-key="cysa_plan" /> Next: CySA+ — create study plan</label>
+        <label><input type="checkbox" data-key="btl1_plan" /> Next: BTL1 — hands-on SOC labs</label>
+        <label><input type="checkbox" data-key="pnpt_plan" /> Next: PNPT — structured red team track</label>
+      </div>
 
-          <div class="checklist" data-group="certs">
-            <label><input type="checkbox" data-key="secplus_reading" /> Security+ SY0-701 — finish study objectives</label>
-            <label><input type="checkbox" data-key="secplus_practice" /> Security+ — complete practice exams + weak areas</label>
-            <label><input type="checkbox" data-key="secplus_exam" /> Security+ — schedule & pass exam</label>
-            <hr />
-            <label><input type="checkbox" data-key="cysa_plan" /> Next: CySA+ — create study plan</label>
-            <label><input type="checkbox" data-key="btl1_plan" /> Next: BTL1 — hands-on SOC labs</label>
-            <label><input type="checkbox" data-key="pnpt_plan" /> Next: PNPT — structured red team track</label>
-          </div>
-
-          <div class="progress">
-            <div class="progress-top">
-              <span class="muted small">Completion</span>
-              <span id="certProgressText" class="muted small">0%</span>
-            </div>
-            <div class="bar"><div id="certProgressBar" class="bar-fill" style="width:0%"></div></div>
-          </div>
+      <div class="progress">
+        <div class="progress-top">
+          <span class="muted small">Completion</span>
+          <span id="certProgressText" class="muted small">0%</span>
         </div>
+        <div class="bar">
+          <div id="certProgressBar" class="bar-fill" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
 
-        <div class="card">
-          <h3>Weekly Output (Proof)</h3>
-         
+    <div class="card">
+      <h3>Weekly Output (Proof)</h3>
 
-          <div class="checklist" data-group="weekly">
-            <label><input type="checkbox" data-key="wk_writeup" /> Publish 1 lab write-up (GitHub / blog)</label>
-            <label><input type="checkbox" data-key="wk_project" /> Improve 1 project feature (tracker, UI, docs)</label>
-            <label><input type="checkbox" data-key="wk_logs" /> Review logs/detection notes for 1 attack</label>
-            <label><input type="checkbox" data-key="wk_linkedin" /> Post 1 LinkedIn update (progress + lesson learned)</label>
-          </div>
-
-          <div class="progress">
-            <div class="progress-top">
-              <span class="muted small">Completion</span>
-              <span id="weeklyProgressText" class="muted small">0%</span>
-            </div>
-            <div class="bar"><div id="weeklyProgressBar" class="bar-fill" style="width:0%"></div></div>
-       
+      <div class="checklist" data-group="weekly">
+        <label><input type="checkbox" data-key="wk_writeup" /> Publish 1 lab write-up (GitHub / blog)</label>
+        <label><input type="checkbox" data-key="wk_project" /> Improve 1 project feature (tracker, UI, docs)</label>
+        <label><input type="checkbox" data-key="wk_logs" /> Review logs/detection notes for 1 attack</label>
+        <label><input type="checkbox" data-key="wk_linkedin" /> Post 1 LinkedIn update (progress + lesson learned)</label>
       </div>
 
-      <div class="card note">
-        <h3>Make it Public (Recommended)</h3>
-        <ol class="bullet">
-          <li>Create a <strong>README progress</strong> section (checkboxes) in your repo.</li>
-          <li>Use a <strong>GitHub Project board</strong> called “Cyber Roadmap”.</li>
-          
-        </ol>
+      <div class="progress">
+        <div class="progress-top">
+          <span class="muted small">Completion</span>
+          <span id="weeklyProgressText" class="muted small">0%</span>
+        </div>
+        <div class="bar">
+          <div id="weeklyProgressBar" class="bar-fill" style="width:0%"></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <div class="card note">
+    <h3>Make it Public (Recommended)</h3>
+    <ol class="bullet">
+      <li>Create a <strong>README progress</strong> section (checkboxes) in your repo.</li>
+      <li>Use a <strong>GitHub Project board</strong> called “Cyber Roadmap”.</li>
+    </ol>
+  </div>
+</section>
 
     <section id="projects" class="section wrap">
       <div class="section-head">
@@ -248,24 +250,24 @@
           </div>
         </article>
 
-        <div class="card glow">
+   <article class="card glow">
   <h3>TryHackMe – Blue Team Path</h3>
-
   <img src="https://tryhackme-badges.s3.amazonaws.com/bamba393.png"
        alt="TryHackMe Badge"
        style="max-width:100%; border-radius:12px; margin-bottom:12px;">
-
   <p class="muted small">
     Focused on Blue Team, Active Directory, and detection-based labs.
-    Practicing log analysis, enumeration detection, and attack simulation
-    in structured learning environments.
+    Practicing log analysis, enumeration detection, and attack simulation in structured learning environments.
   </p>
 
-  <a class="btn tiny ghost"
-     href="https://tryhackme.com/p/bamba393"
-     target="_blank">
-     View Profile
-  </a>
+  <ul class="bullet">
+    <li>Completed Blue Team fundamentals rooms</li>
+    <li>Practiced log-based detection scenarios</li>
+    <li>Active Directory attack simulations</li>
+  </ul>
+
+  <a class="btn tiny ghost" href="https://tryhackme.com/p/bamba393" target="_blank">View Profile</a>
+</article>
 </div>
       </div>
 
@@ -296,11 +298,7 @@
           </p>
           <button id="copyBtn" class="btn tiny primary" type="button">Copy bio</button>
           <p id="copyMsg" class="muted small" role="status" aria-live="polite"></p>
-          <ul class="bullet">
-  <li>Completed Blue Team fundamentals rooms</li>
-  <li>Practiced log-based detection scenarios</li>
-  <li>Active Directory attack simulations</li>
-</ul>
+          
         </div>
       </div>
     </section>
@@ -314,6 +312,7 @@
 </body>
 
 </html>
+
 
 
 
