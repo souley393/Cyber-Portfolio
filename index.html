@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Souleymane Bamba | Cybersecurity Portfolio</title>
   <meta name="description" content="Souleymane Bamba — Cybersecurity portfolio, home lab, certifications, and progress tracker." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bgCanvas"></canvas>
+
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="#home">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="brand-text">Souleymane Bamba</span>
-      </a>
-
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#lab">Home Lab</a>
-        <a href="#goals">Goals</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
+      <div class="brand-block">
+        <a class="brand" href="#home">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span class="brand-text">Souleymane Bamba</span>
+        </a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#lab">Home Lab</a>
+          <a href="#goals">Goals</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
       <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
     </div>
 
@@ -37,13 +43,18 @@
   </header>
 
   <main id="home">
+
+    <!-- ===== HERO ===== -->
     <section class="hero wrap">
       <div class="hero-left">
-        <p class="kicker">Cybersecurity • IT Support • Home Lab Builder</p>
-        <h1>Building real skills in public.</h1>
+        <p class="kicker">
+          <span class="status-dot"></span>
+          Cybersecurity &nbsp;·&nbsp; IT Support &nbsp;·&nbsp; Home Lab Builder
+        </p>
+        <h1>Building real skills<br><span class="accent">in public.</span></h1>
         <p class="sub">
-          I’m <strong>Souleymane Bamba</strong>. I document my cybersecurity growth with hands-on labs,
-          certifications, and projects.
+          I'm <strong>Souleymane Bamba</strong>. I document my cybersecurity growth with
+          hands-on labs, certifications, and projects.
         </p>
 
         <div class="cta-row">
@@ -54,35 +65,42 @@
         <div class="quick-badges">
           <span class="pill">Security+ SY0-701</span>
           <span class="pill">Active Directory Lab</span>
-          <span class="pill">Windows Server • Kali</span>
+          <span class="pill">Windows Server · Kali</span>
           <span class="pill">Blue/Red Team Practice</span>
         </div>
       </div>
 
       <div class="hero-right">
-        <div class="card glow">
-          <h2 class="card-title">Current Focus</h2>
+        <div class="card card-glow card-cyan">
+          <div class="card-label">// CURRENT FOCUS</div>
+          <h2 class="card-title">Active Objectives</h2>
           <ul class="mini-list">
-            <li>✅ Home lab: AD + DNS + GPO auditing</li>
-            <li>✅ Offensive practice: Kerberoasting / PTH labs</li>
-            <li>🎯 Goal: Finish Security+ and publish weekly progress</li>
+            <li><span class="check">✅</span> Home lab: AD + DNS + GPO auditing</li>
+            <li><span class="check">✅</span> Offensive practice: Kerberoasting / PTH labs</li>
+            <li><span class="target">🎯</span> Goal: Finish Security+ &amp; publish weekly progress</li>
           </ul>
-          
+          <p class="muted small tip">
+            <span class="tip-icon">//</span>
+            Pin this repo and link it in your LinkedIn "Featured".
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="section wrap">
       <div class="section-head">
+        <span class="section-tag">01 &nbsp;·&nbsp; ABOUT</span>
         <h2>About</h2>
-        <p class="muted">clear, direct, proof-based.</p>
+        <p class="muted">A friendly snapshot  clear, direct.</p>
       </div>
 
       <div class="grid two">
-        <div class="card">
-          <h3>Who I am</h3>
+        <div class="card card-blue">
+          <div class="card-label">// WHO I AM</div>
+          <h3>Background</h3>
           <p>
-            I’m an IT and cybersecurity learner with hands-on Windows domain experience through a
+            I'm an IT and cybersecurity learner with hands-on Windows domain experience through a
             VMware-based home lab. I focus on practical skills: troubleshooting, security auditing,
             detection thinking, and attack simulation for learning.
           </p>
@@ -93,12 +111,13 @@
           </ul>
         </div>
 
-        <div class="card">
-          <h3>What I bring</h3>
+        <div class="card card-green">
+          <div class="card-label">// WHAT I BRING</div>
+          <h3>Skills &amp; Value</h3>
           <ul class="bullet">
-            <li><strong>Hands-on proof</strong>: labs documented + repeatable steps</li>
-            <li><strong>Security mindset</strong>: logs, controls, and real-world scenarios</li>
-            <li><strong>Communication</strong>: customer support + clear documentation</li>
+            <li><strong>Hands-on proof</strong> — labs documented + repeatable steps</li>
+            <li><strong>Security mindset</strong> — logs, controls, and real-world scenarios</li>
+            <li><strong>Communication</strong> — customer support + clear documentation</li>
           </ul>
 
           <div class="skills">
@@ -110,19 +129,23 @@
             <span class="tag">Kali Linux</span>
             <span class="tag">Kerberos</span>
             <span class="tag">Hashcat</span>
-            <span class="tag">Blue/Red Team Labs</span>
+            <span class="tag">Blue/Red Team</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== HOME LAB ===== -->
     <section id="lab" class="section wrap">
       <div class="section-head">
+        <span class="section-tag">02 &nbsp;·&nbsp; LAB</span>
         <h2>Home Lab</h2>
+        <p class="muted">Case study.</p>
       </div>
 
       <div class="grid three">
-        <div class="card">
+        <div class="card card-blue">
+          <div class="card-label">// INFRASTRUCTURE</div>
           <h3>Environment</h3>
           <ul class="bullet">
             <li>Windows Server 2022 Domain Controller (lab.local)</li>
@@ -132,7 +155,8 @@
           </ul>
         </div>
 
-        <div class="card">
+        <div class="card card-cyan">
+          <div class="card-label">// DEFENSE</div>
           <h3>Blue Team</h3>
           <ul class="bullet">
             <li>Audit policy + Security logs (Event Viewer)</li>
@@ -142,8 +166,9 @@
           </ul>
         </div>
 
-        <div class="card">
-          <h3>Red Team Learning</h3>
+        <div class="card card-warn">
+          <div class="card-label">// OFFENSE (LEARNING)</div>
+          <h3>Red Team</h3>
           <ul class="bullet">
             <li>Kerbrute / Hydra enumeration practice</li>
             <li>Kerberoasting setup + ticket extraction</li>
@@ -154,166 +179,148 @@
       </div>
     </section>
 
+    <!-- ===== GOALS ===== -->
     <section id="goals" class="section wrap">
-  <div class="section-head">
-    <h2>Goals & Progress Tracker</h2>
-    
-  </div>
-
-  <div class="grid two">
-    <div class="card">
-      <div class="card-row">
-        <h3>Cert Roadmap</h3>
+      <div class="section-head">
+        <span class="section-tag">03 &nbsp;·&nbsp; GOALS</span>
+        <h2>Goals &amp; Progress Tracker</h2>
+        <p class="muted">Progress is saved locally on your device.</p>
       </div>
 
-      <div class="checklist" data-group="certs">
-        <label><input type="checkbox" checked disabled data-key="secplus_objectives" /> Security+ SY0-701 — finish study objectives</label>
-        <label><input type="checkbox" disabled data-key="secplus_practice" /> Security+ — complete practice exams + weak areas</label>
-        <label><input type="checkbox" disabled data-key="secplus_exam" /> Security+ — schedule & pass exam</label>
-        <hr />
-        <label><input type="checkbox" disabled data-key="cysa_plan" /> Next: CySA+ — create study plan</label>
-        <label><input type="checkbox" disabled data-key="btl1_plan" /> Next: BTL1 — hands-on SOC labs</label>
-        <label><input type="checkbox" disabled data-key="pnpt_plan" /> Next: PNPT — structured red team track</label>
-      </div>
+      <div class="grid two">
+        <div class="card card-blue">
+          <div class="card-row">
+            <div>
+              <div class="card-label">// CERTIFICATIONS</div>
+              <h3>Cert Roadmap</h3>
+            </div>
+            <button id="resetBtn" class="btn tiny ghost" type="button">Reset</button>
+          </div>
 
-      <div class="progress">
-        <div class="progress-top">
-          <span class="muted small">Completion</span>
-          <span id="certProgressText" class="muted small">0%</span>
+          <div class="checklist" data-group="certs">
+            <label><input type="checkbox" data-key="secplus_reading" /><span>Security+ SY0-701 — finish study objectives</span></label>
+            <label><input type="checkbox" data-key="secplus_practice" /><span>Security+ — complete practice exams + weak areas</span></label>
+            <label><input type="checkbox" data-key="secplus_exam" /><span>Security+ — schedule &amp; pass exam</span></label>
+            <hr />
+            <label><input type="checkbox" data-key="cysa_plan" /><span>Next: CySA+ — create study plan</span></label>
+            <label><input type="checkbox" data-key="btl1_plan" /><span>Next: BTL1 — hands-on SOC labs</span></label>
+            <label><input type="checkbox" data-key="pnpt_plan" /><span>Next: PNPT — structured red team track</span></label>
+          </div>
+
+          <div class="progress">
+            <div class="progress-top">
+              <span class="muted small">Completion</span>
+              <span id="certProgressText" class="progress-pct">0%</span>
+            </div>
+            <div class="bar"><div id="certProgressBar" class="bar-fill bar-blue" style="width:0%"></div></div>
+          </div>
         </div>
-        <div class="bar">
-          <div id="certProgressBar" class="bar-fill" style="width:0%"></div>
+
+        <div class="card card-green">
+          <div class="card-label">// WEEKLY OUTPUT</div>
+          <h3>Weekly Proof</h3>
+          <p class="muted small">This turns learning into visible momentum.</p>
+
+          <div class="checklist" data-group="weekly">
+            <label><input type="checkbox" data-key="wk_writeup" /><span>Publish 1 lab write-up (GitHub / blog)</span></label>
+            <label><input type="checkbox" data-key="wk_project" /><span>Improve 1 project feature (tracker, UI, docs)</span></label>
+            <label><input type="checkbox" data-key="wk_logs" /><span>Review logs/detection notes for 1 attack</span></label>
+            <label><input type="checkbox" data-key="wk_linkedin" /><span>Post 1 LinkedIn update (progress + lesson learned)</span></label>
+          </div>
+
+          <div class="progress">
+            <div class="progress-top">
+              <span class="muted small">Completion</span>
+              <span id="weeklyProgressText" class="progress-pct">0%</span>
+            </div>
+            <div class="bar"><div id="weeklyProgressBar" class="bar-fill bar-green" style="width:0%"></div></div>
+          </div>
+
+          <p class="muted small tip" style="margin-top:14px">
+            <span class="tip-icon">//</span>
+            <!-- For each time i check an item,i should add a short note in GitHub README log. -->
+          </p>
         </div>
       </div>
-    </div>
 
-    <div class="card">
-      <h3>Weekly Output (Proof)</h3>
+  
+    </section>
 
-      <div class="checklist" data-group="weekly">
-        <label><input type="checkbox" disabled data-key="wk_writeup" /> Publish 1 lab write-up (GitHub / blog)</label>
-        <label><input type="checkbox" disabled data-key="wk_project" /> Improve 1 project feature (tracker, UI, docs)</label>
-        <label><input type="checkbox" disabled data-key="wk_logs" /> Review logs/detection notes for 1 attack</label>
-        <label><input type="checkbox" disabled data-key="wk_linkedin" /> Post 1 LinkedIn update (progress + lesson learned)</label>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section wrap">
+      <div class="section-head">
+        <span class="section-tag">04 &nbsp;·&nbsp; PROJECTS</span>
+        <h2>Projects</h2>
       </div>
 
-      <div class="progress">
-        <div class="progress-top">
-          <span class="muted small">Completion</span>
-          <span id="weeklyProgressText" class="muted small">0%</span>
+      <div class="grid three">
+        <article class="card card-blue project-card">
+          <div class="card-label">// PROJECT 01</div>
+          <h3>Cyber Portfolio + Tracker</h3>
+          <p class="muted small">This website (GitHub Pages) + goals checklist + proof log.</p>
+          <div class="card-actions">
+            <a class="btn tiny primary" href="#" aria-disabled="true">Live</a>
+            <a class="btn tiny ghost" href="#" aria-disabled="true">Repo</a>
+          </div>
+        </article>
+
+        <article class="card card-cyan project-card">
+          <div class="card-label">// PROJECT 02</div>
+          <h3>Active Directory Lab Write-ups</h3>
+          <p class="muted small">Step-by-step: DC, DNS, join client, auditing, GPOs.</p>
+          <div class="card-actions">
+            <a class="btn tiny ghost" href="#" aria-disabled="true">Docs</a>
+          </div>
+        </article>
+
+        <article class="card card-warn project-card">
+          <div class="card-label">// PROJECT 03</div>
+          <h3>Attack + Detection Practice</h3>
+          <p class="muted small">Kerberoasting &amp; PTH labs with "What to look for" logs.</p>
+          <div class="card-actions">
+            <a class="btn tiny ghost" href="#" aria-disabled="true">Write-up</a>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section wrap">
+      <div class="section-head">
+        <span class="section-tag">05 &nbsp;·&nbsp; CONTACT</span>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="grid two">
+        <div class="card card-blue">
+          <div class="card-label">// LINKS</div>
+          <h3>Find Me Online</h3>
+          <ul class="bullet contact-list">
+            <li><span class="link-label">LinkedIn</span><span class="muted">— Coming soon</span></li>
+            <li><span class="link-label">GitHub</span><a href="https://github.com/souley393" class="link-val">github.com/souley393</a></li>
+            <li><span class="link-label">Email</span><a href="/cdn-cgi/l/email-protection#4725262a2526747e7407202a262e2b6924282a" class="link-val"><span class="__cf_email__" data-cfemail="543635393635676d67143339353d387a373b39">[email&#160;protected]</span></a></li>
+          </ul>
         </div>
-        <div class="bar">
-          <div id="weeklyProgressBar" class="bar-fill" style="width:0%"></div>
+
+        <div class="card card-green">
+          <div class="card-label">// QUICK BIO</div>
+          <h3>Copy / Paste Bio</h3>
+          <p class="muted small" id="copyBio">
+            Cybersecurity-focused IT professional with a hands-on VMware home lab (Windows Server 2022 AD,
+            Windows client, Kali). Documenting labs, certifications, and security learning in public with
+            practical write-ups and projects.
+          </p>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:12px">
+            <button id="copyBtn" class="btn tiny primary" type="button">Copy bio</button>
+            <p id="copyMsg" class="muted small" role="status" aria-live="polite"></p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="projects" class="section wrap">
-  <div class="section-head">
-    <h2>Projects</h2>
-    <p class="muted">Adding screenshots and video soon.</p>
-  </div>
-
-  <div class="grid three">
-    <article class="card">
-      <h3>Cyber Portfolio + Tracker</h3>
-      <p class="muted small">This website (GitHub Pages) + goals checklist + proof log.</p>
-      <div class="card-actions">
-        <a class="btn tiny primary" href="https://souley393.github.io/Cyber-Portfolio/">Live</a>
-        <a class="btn tiny ghost" href="https://github.com/souley393/Cyber-Portfolio">Repo</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <h3>Active Directory Lab Write-ups</h3>
-      <p class="muted small">Step-by-step: DC, DNS, join client, auditing, GPOs.</p>
-      <div class="card-actions">
-        <a class="btn tiny ghost" href="#" aria-disabled="true">Docs</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <h3>Attack + Detection Practice</h3>
-      <p class="muted small">Kerberoasting & PTH labs with “What to look for” logs.</p>
-      <div class="card-actions">
-        <a class="btn tiny ghost" href="#" aria-disabled="true">Write-up</a>
-      </div>
-    </article>
-
-    <article class="card glow">
-      <h3>TryHackMe – Blue Team Path</h3>
-      <img src="https://tryhackme-badges.s3.amazonaws.com/bamba393.png"
-           alt="TryHackMe Badge"
-           style="max-width:100%; border-radius:12px; margin-bottom:12px;">
-
-      <p class="muted small">
-        Focused on Blue Team, Active Directory, and detection-based labs.
-        Practicing log analysis, enumeration detection, and attack simulation in structured learning environments.
-      </p>
-
-      <ul class="bullet">
-        <li>Completed Blue Team fundamentals rooms</li>
-        <li>Practiced log-based detection scenarios</li>
-        <li>Active Directory attack simulations</li>
-      </ul>
-
-      <a class="btn tiny ghost" href="https://tryhackme.com/p/bamba393" target="_blank">View Profile</a>
-    </article>
-  </div>
-</section>
-
-<section id="contact" class="section wrap">
-  <div class="section-head">
-    <h2>Contact</h2>
-  </div>
-
-  <div class="grid two">
-    <div class="card">
-      <h3>Links</h3>
-      <ul class="bullet">
-        <li>LinkedIn: <span class="muted">Soon</span></li>
-        <li>GitHub: <span class="muted">github.com/souley393</span></li>
-        <li>Email: <span class="muted">bamba393@gmail.com</span></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Quick bio</h3>
-      <p class="muted small" id="copyBio">
-        Cybersecurity-focused IT professional with a hands-on VMware home lab (Windows Server 2022 AD, Windows client, Kali).
-        Documenting labs, certifications, and security learning in public with practical write-ups and projects.
-      </p>
-      <button id="copyBtn" class="btn tiny primary" type="button">Copy bio</button>
-      <p id="copyMsg" class="muted small" role="status" aria-live="polite"></p>
-    </div>
-  </div>
-</section>
   </main>
 
   <footer class="footer wrap">
-    <span class="muted small">© <span id="year"></span> Souleymane Bamba • Built on GitHub Pages</span>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <span class="muted small">© <span id="year"></span> Souleymane Bamba &nbsp;·&nbsp; Built on GitHub Pages</span>
+    <s
